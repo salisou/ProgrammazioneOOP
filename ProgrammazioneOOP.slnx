@@ -5,4 +5,5 @@
   <Folder Name="/progetto02/">
     <Project Path="progetto03/Stampa/Stampa.csproj" />
   </Folder>
+  <Folder Name="/WindowsApp/" />
 </Solution>

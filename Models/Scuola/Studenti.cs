@@ -30,15 +30,6 @@
         }
 
         /// <summary>
-        /// Costruttore che accetta nome completo (nome + cognome) e lo divide in nome e cognome
-        /// </summary>
-        /// <param name="nomeCompleto"></param>
-        public Studenti(string nomeCompleto)
-        {
-            nomeCompleto = this.nome + " " + this.cognome;
-        }
-
-        /// <summary>
         /// Costruttore che accetta nome e età
         /// </summary>
         /// <param name="nome"></param>
@@ -47,6 +38,18 @@
         {
             this.nome = nome;
             this.eta = eta;
+        }
+        #endregion
+
+        #region Metodi
+        /// <summary>
+        /// Metodo che accetta nome completo (nome + cognome) e lo divide in nome e cognome
+        /// </summary>
+        /// <param name="nomeCompleto"></param>
+        public string NomeCompleto(string nomeCompleto)
+        {
+            nomeCompleto = this.nome + " " + this.cognome;
+            return nomeCompleto;
         }
         #endregion
     }
