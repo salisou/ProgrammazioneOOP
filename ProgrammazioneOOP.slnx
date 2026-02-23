@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/progetto01/">
+    <Project Path="Models/Models.csproj" />
+  </Folder>
+  <Folder Name="/progetto02/">
+    <Project Path="progetto03/Stampa/Stampa.csproj" />
+  </Folder>
+</Solution>
