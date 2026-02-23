@@ -6,4 +6,7 @@
     <Project Path="progetto03/Stampa/Stampa.csproj" />
   </Folder>
   <Folder Name="/WindowsApp/" />
+  <Folder Name="/WindowsApp/01/">
+    <Project Path="HelloWorld/HelloWorld.csproj" />
+  </Folder>
 </Solution>
