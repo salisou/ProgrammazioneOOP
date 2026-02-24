@@ -2,7 +2,7 @@
 {
     /// <summary>
     ///  Modello che definisce la struttura dei dati per uno studente, 
-    ///  con proprietà per nome, cognome e età 🎉🎉🎉🎉🎉🎉🎉🎉
+    ///  con proprietà per nome, cognome e età 
     /// </summary>
     public class Studenti
     {
@@ -19,10 +19,17 @@
         }
 
         /// <summary>
-        /// Costruttore che accetta nome e cognome
+        /// Costruttore che accetta nome, cognome e età
         /// </summary>
         /// <param name="nome"></param>
         /// <param name="cognome"></param>
+        /// <param name="eta"></param>
+        public Studenti(string nome, string cognome, int eta)
+        {
+            this.nome = nome;
+            this.cognome = cognome;
+            this.eta = eta;
+        }
         public Studenti(string nome, string cognome)
         {
             this.nome = nome;
@@ -50,6 +57,12 @@
         {
             nomeCompleto = this.nome + " " + this.cognome;
             return nomeCompleto;
+        }
+
+
+        public void Saluta()
+        {
+            Console.WriteLine("Ciao, come stai?");
         }
         #endregion
     }

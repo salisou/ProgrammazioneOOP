@@ -6,12 +6,20 @@ namespace Stampa.ViewModels
     {
         public VM_Studenti()
         {
-            Models.Scuola.Studenti studente = new();
+            Studenti studente = new();
             studente.nome = "Mario";
             studente.cognome = "Rossi";
             studente.eta = 20;
 
             Console.WriteLine($"Nome: {studente.nome} cognome: {studente.cognome} età {studente.eta}");
+
+
+            Studenti st = new("Moussa", "Salisou", 10);
+            Console.WriteLine($"\nNome: {st.nome} e cognome: {st.cognome} età {st.eta}");
+
+
+            st.Saluta();
+
 
             //Popolamento di una lista di studenti
             List<Studenti> studenti = new()
