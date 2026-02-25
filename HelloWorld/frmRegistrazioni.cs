@@ -1,11 +1,13 @@
 ﻿namespace HelloWorld
 {
-    public partial class frm_BtnLbl : Form
+    public partial class frmRegistrazioni : Form
     {
-        public frm_BtnLbl()
+        public frmRegistrazioni()
         {
             InitializeComponent();
+            txtPassword.UseSystemPasswordChar = true;
         }
+
 
         private void btnMessage_Click(object sender, EventArgs e)
         {
@@ -26,6 +28,19 @@
             else
             {
                 MessageBox.Show($"Il nome dello studente è: {txtNome.Text} e il congnome: {txtCognome.Text}");
+            }
+        }
+
+        private void chkMostraPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            txtPassword.UseSystemPasswordChar = !chkMostraPassword.Checked;
+            if (chkMostraPassword.Checked)
+            {
+                chkMostraPassword.Text = "Nascondi Password";
+            }
+            else
+            {
+                chkMostraPassword.Text = "Mostra Password";
             }
         }
     }

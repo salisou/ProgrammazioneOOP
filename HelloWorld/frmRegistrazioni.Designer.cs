@@ -1,6 +1,6 @@
 ﻿namespace HelloWorld
 {
-    partial class frm_BtnLbl
+    partial class frmRegistrazioni
     {
         /// <summary>
         /// Required designer variable.
@@ -35,9 +35,7 @@
             label1 = new Label();
             txtPassword = new TextBox();
             lblPassword = new Label();
-            checkBox1 = new CheckBox();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            chkMostraPassword = new CheckBox();
             SuspendLayout();
             // 
             // btnMessage
@@ -46,9 +44,9 @@
             btnMessage.Cursor = Cursors.Hand;
             btnMessage.Font = new Font("Arial", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnMessage.ForeColor = Color.White;
-            btnMessage.Location = new Point(22, 257);
+            btnMessage.Location = new Point(134, 209);
             btnMessage.Name = "btnMessage";
-            btnMessage.Size = new Size(163, 30);
+            btnMessage.Size = new Size(120, 35);
             btnMessage.TabIndex = 0;
             btnMessage.Text = "Salva";
             btnMessage.UseVisualStyleBackColor = false;
@@ -57,7 +55,7 @@
             // lblNome
             // 
             lblNome.AutoSize = true;
-            lblNome.Location = new Point(22, 66);
+            lblNome.Location = new Point(12, 26);
             lblNome.Name = "lblNome";
             lblNome.Size = new Size(90, 15);
             lblNome.TabIndex = 0;
@@ -65,24 +63,24 @@
             // 
             // txtNome
             // 
-            txtNome.Location = new Point(22, 84);
+            txtNome.Location = new Point(12, 44);
             txtNome.Name = "txtNome";
             txtNome.PlaceholderText = "Inserisci il Nome";
-            txtNome.Size = new Size(216, 23);
+            txtNome.Size = new Size(242, 23);
             txtNome.TabIndex = 1;
             // 
             // txtCognome
             // 
-            txtCognome.Location = new Point(22, 155);
+            txtCognome.Location = new Point(12, 115);
             txtCognome.Name = "txtCognome";
             txtCognome.PlaceholderText = "Inserisci il cognome";
-            txtCognome.Size = new Size(216, 23);
+            txtCognome.Size = new Size(242, 23);
             txtCognome.TabIndex = 3;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(22, 137);
+            label1.Location = new Point(12, 97);
             label1.Name = "label1";
             label1.Size = new Size(110, 15);
             label1.TabIndex = 2;
@@ -90,47 +88,38 @@
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(22, 220);
+            txtPassword.Location = new Point(12, 180);
             txtPassword.Name = "txtPassword";
             txtPassword.PlaceholderText = "Inserisci la password";
-            txtPassword.Size = new Size(196, 23);
+            txtPassword.Size = new Size(242, 23);
             txtPassword.TabIndex = 5;
-            txtPassword.UseSystemPasswordChar = true;
             // 
             // lblPassword
             // 
             lblPassword.AutoSize = true;
-            lblPassword.Location = new Point(22, 202);
+            lblPassword.Location = new Point(12, 162);
             lblPassword.Name = "lblPassword";
             lblPassword.Size = new Size(57, 15);
             lblPassword.TabIndex = 4;
             lblPassword.Text = "Password";
             // 
-            // checkBox1
+            // chkMostraPassword
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(224, 224);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(82, 19);
-            checkBox1.TabIndex = 6;
-            checkBox1.Text = "checkBox1";
-            checkBox1.UseVisualStyleBackColor = true;
+            chkMostraPassword.AutoSize = true;
+            chkMostraPassword.Location = new Point(12, 225);
+            chkMostraPassword.Name = "chkMostraPassword";
+            chkMostraPassword.Size = new Size(116, 19);
+            chkMostraPassword.TabIndex = 6;
+            chkMostraPassword.Text = "Mostra password";
+            chkMostraPassword.UseVisualStyleBackColor = true;
+            chkMostraPassword.CheckedChanged += chkMostraPassword_CheckedChanged;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Location = new Point(393, 69);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(192, 174);
-            pictureBox1.TabIndex = 7;
-            pictureBox1.TabStop = false;
-            // 
-            // frm_BtnLbl
+            // frmRegistrazioni
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(pictureBox1);
-            Controls.Add(checkBox1);
+            ClientSize = new Size(274, 283);
+            Controls.Add(chkMostraPassword);
             Controls.Add(txtPassword);
             Controls.Add(lblPassword);
             Controls.Add(txtCognome);
@@ -138,9 +127,8 @@
             Controls.Add(txtNome);
             Controls.Add(lblNome);
             Controls.Add(btnMessage);
-            Name = "frm_BtnLbl";
-            Text = "frm_BtnLbl";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            Name = "frmRegistrazioni";
+            Text = "Registrazione";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -154,7 +142,6 @@
         private Label label1;
         private TextBox txtPassword;
         private Label lblPassword;
-        private CheckBox checkBox1;
-        private PictureBox pictureBox1;
+        private CheckBox chkMostraPassword;
     }
 }
