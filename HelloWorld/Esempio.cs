@@ -2,12 +2,12 @@
 
 namespace HelloWorld
 {
-    public class PasswordTextBox : UserControl
+    internal class Esempio : UserControl
     {
         private TextBox txt;
         private bool mostraPassword = false;
 
-        public PasswordTextBox()
+        public Esempio()
         {
             this.Height = 34;
             this.Width = 240;
