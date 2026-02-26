@@ -58,8 +58,6 @@
             btnStart = new Button();
             progressBar1 = new ProgressBar();
             tmrProgress = new System.Windows.Forms.Timer(components);
-            progressBar2 = new ProgressBar();
-            button3 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)ddgStudentiList).BeginInit();
@@ -279,8 +277,6 @@
             // panel4
             // 
             panel4.BackColor = SystemColors.ActiveCaption;
-            panel4.Controls.Add(button3);
-            panel4.Controls.Add(progressBar2);
             panel4.Controls.Add(btnStart);
             panel4.Controls.Add(progressBar1);
             panel4.Location = new Point(389, 293);
@@ -308,22 +304,6 @@
             // tmrProgress
             // 
             tmrProgress.Tick += tmrProgress_Tick;
-            // 
-            // progressBar2
-            // 
-            progressBar2.Location = new Point(13, 188);
-            progressBar2.Name = "progressBar2";
-            progressBar2.Size = new Size(549, 26);
-            progressBar2.TabIndex = 4;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(582, 189);
-            button3.Name = "button3";
-            button3.Size = new Size(86, 24);
-            button3.TabIndex = 5;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
             // 
             // frmDemo
             // 
@@ -387,7 +367,5 @@
         private ProgressBar progressBar1;
         private Button btnStart;
         private System.Windows.Forms.Timer tmrProgress;
-        private Button button3;
-        private ProgressBar progressBar2;
     }
 }

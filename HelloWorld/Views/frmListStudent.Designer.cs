@@ -1,6 +1,6 @@
-﻿namespace HelloWorld
+﻿namespace HelloWorld.Views
 {
-    partial class frmProgress
+    partial class frmListStudent
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            progressBar1 = new ProgressBar();
-            tmrProgress = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
-            // progressBar1
-            // 
-            progressBar1.Location = new Point(16, 9);
-            progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(615, 33);
-            progressBar1.TabIndex = 0;
-            // 
-            // frmProgress
+            // frmListStudent
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(644, 53);
-            Controls.Add(progressBar1);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "frmProgress";
-            Text = "frmProgress";
+            ClientSize = new Size(800, 450);
+            Name = "frmListStudent";
+            Text = "ListStudent";
             ResumeLayout(false);
         }
 
         #endregion
-
-        private ProgressBar progressBar1;
-        private System.Windows.Forms.Timer tmrProgress;
     }
 }
