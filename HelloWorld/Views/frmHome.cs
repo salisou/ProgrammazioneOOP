@@ -11,5 +11,16 @@
         {
             Close();
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            frmTodoList todoList = new();
+            todoList.ShowDialog();
+        }
     }
 }
