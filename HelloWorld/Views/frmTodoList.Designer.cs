@@ -34,9 +34,13 @@
             txtAddToModulo = new TextBox();
             Modulo = new ListBox();
             panel2 = new Panel();
+            pictureBox2 = new PictureBox();
+            pbxBacToHome = new PictureBox();
             label1 = new Label();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbxBacToHome).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -93,6 +97,8 @@
             // 
             // panel2
             // 
+            panel2.Controls.Add(pictureBox2);
+            panel2.Controls.Add(pbxBacToHome);
             panel2.Controls.Add(label1);
             panel2.Dock = DockStyle.Top;
             panel2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 177);
@@ -100,6 +106,28 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(529, 32);
             panel2.TabIndex = 4;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.close;
+            pictureBox2.Location = new Point(491, 3);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(35, 25);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 6;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pbxClose_Click;
+            // 
+            // pbxBacToHome
+            // 
+            pbxBacToHome.Image = Properties.Resources.back;
+            pbxBacToHome.Location = new Point(1, 3);
+            pbxBacToHome.Name = "pbxBacToHome";
+            pbxBacToHome.Size = new Size(35, 25);
+            pbxBacToHome.SizeMode = PictureBoxSizeMode.Zoom;
+            pbxBacToHome.TabIndex = 5;
+            pbxBacToHome.TabStop = false;
+            pbxBacToHome.Click += pbxBacToHome_Click;
             // 
             // label1
             // 
@@ -127,6 +155,8 @@
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbxBacToHome).EndInit();
             ResumeLayout(false);
         }
 
@@ -138,5 +168,7 @@
         private ListBox Modulo;
         private Panel panel2;
         private Label label1;
+        private PictureBox pbxBacToHome;
+        private PictureBox pictureBox2;
     }
 }

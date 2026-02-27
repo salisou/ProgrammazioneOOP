@@ -32,5 +32,17 @@
         {
             Modulo.Items.Clear();
         }
+
+        private void pbxClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pbxBacToHome_Click(object sender, EventArgs e)
+        {
+            frmHome home = new();
+            home.Show();
+            this.Close();
+        }
     }
 }
